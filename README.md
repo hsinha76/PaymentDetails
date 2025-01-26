@@ -12,14 +12,14 @@ User data is saved as JSON in the `LastPayment.txt` file located in the app's in
     <td style="width: 50%; padding: 10px;">
       <div style="max-width: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
         <img src="https://github.com/hsinha76/PaymentDetails/blob/7d999f4b2b7f293f6a5c6668ad72252497e11025/Screenshot%202025-01-26%20at%208.09.52%E2%80%AFPM.png" 
-             style="max-width: 100%; height: auto; object-fit: contain;" 
+             style="max-width: 100%; height: 80px; object-fit: contain;" 
              alt="Device Explorer window">
       </div>
     </td>
     <td style="width: 50%; padding: 10px;">
       <div style="max-width: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
         <img src="https://github.com/hsinha76/PaymentDetails/blob/7d999f4b2b7f293f6a5c6668ad72252497e11025/Screenshot%202025-01-26%20at%208.11.34%E2%80%AFPM.png" 
-             style="max-width: 100%; height: auto; object-fit: contain;" 
+             style="max-width: 100%; height: 80px; object-fit: contain;" 
              alt="LastPayment.txt file">
       </div>
     </td>
