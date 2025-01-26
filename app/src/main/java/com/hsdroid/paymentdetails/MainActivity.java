@@ -48,7 +48,13 @@ public class MainActivity extends AppCompatActivity implements PaymentListener, 
         });
 
         addPaymentText.setOnClickListener(v -> showPaymentDialog());
-        saveToFile.setOnClickListener(v -> FileUtils.savePayments(this, payments, this));
+        saveToFile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveToFile.setEnabled(false);
+                FileUtils.savePayments(MainActivity.this, payments, MainActivity.this);
+            }
+        });
     }
 
     private void updateUI() {
@@ -70,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements PaymentListener, 
                 chip.setOnCloseIconClickListener(v -> {
                     payments.remove(payment);
                     updateUI();
+                    saveToFile.setEnabled(true);
                 });
                 chipGroup.addView(chip);
                 totalAmount += payment.getAmount();
@@ -106,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements PaymentListener, 
     public void onPaymentAdded(Payment payment) {
         payments.add(payment);
         updateUI();
+        saveToFile.setEnabled(true);
     }
 
     @Override
