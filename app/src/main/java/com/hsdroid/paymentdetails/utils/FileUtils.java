@@ -25,13 +25,6 @@ public class FileUtils {
 
     public static void savePayments(Context context, List<Payment> payments, SaveCallback callback) {
         executorService.execute(() -> {
-            if (payments == null || payments.isEmpty()) {
-                if (callback != null) {
-                    callback.onSaveComplete(context.getString(R.string.no_payments_to_save));
-                }
-                return;
-            }
-
             List<Payment> savedPayments = loadPaymentsSync(context);
 
             if (payments.equals(savedPayments)) {
