@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Payment Details</string>
+    <string name="add_payment_link"><u>Add Payment</u></string>
+    <string name="add_payment">Add Payment</string>
+    <string name="amount">Amount</string>
+    <string name="provider">Provider Bank</string>
+    <string name="transaction_reference">Transaction Reference</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="payments">Payments</string>
+    <string name="zero">₹0</string>
+    <string name="no_payments_yet">No payments yet.</string>
+    <string name="save">Save</string>
+    <string name="total_amount">Total Amount = </string>
+    <string name="provider_and_reference_are_required">Provider and Reference are required</string>
+    <string name="invalid_amount">Invalid amount</string>
+    <string name="no_payments_to_save">No payments to save!</string>
+    <string name="no_new_data_to_save">No new data to save!</string>
+    <string name="payments_saved_to_file_successfully">Payments saved to file successfully!</string>
+    <string name="failed_to_save_payments">Failed to save payments:</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="rupee_placeholder">= Rs.</string>
+    <string name="no_payment_mode_available">No payment mode available</string>
+    <string name="required">Required</string>
+</resources>
